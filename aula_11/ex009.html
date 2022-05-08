@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+
+    <h1>Bem vindo ao registro de nacionalidade</h1>
+    <p1> informe seu nome <input type="text" name="nome" id="nome"></p1><br>
+    <p1>Informe sua nacionalidade <input type="text" name="nacionalidade" id="nacionalidade "></p1>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id='res'></div>
+
+    <script>
+        function verificar(){
+            const nacionalidade = window.document.getElementById('nacionalidade')
+            const nacionalidade_certa = nacionalidade.Value
+            const input_nome = window.document.getElementById('nome')
+            const nome = input_nome.value
+            const res = window.document.querySelector('div#res')
+            
+            res.innerHTML= `asd ${nome}`
+            /*if(nacionalidade == 'brasil' || 'brazil'){
+                res.innerHTML = (`Bem vindo ${nome} você é brasileiro`)
+            }else if(nacionalidade != 'brasil' || 'brazil'){
+                res.innerHTML = (`Bem vindo ${nome} você é estrangeiro`)
+            }*/
+            
+        }
+
+    </script>
+    
+</body>
+</html>
